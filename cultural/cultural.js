@@ -82,7 +82,7 @@ $(document).ready( function() {
 						+'<p>Free:' + free_event + '</p>'
 						+'<a href="'+link+'">Link to this event</a><br />'
 						+'<button class="map-button" id="'+i+'">Check Map</button>'
-						+'<div id="map-canvas-'+i+'" style="width: 400px; height: 200px"></div>'
+						+'<div class="be-center" id="map-canvas-'+i+'" style="width: 400px; height: 200px"></div>'
 						+'</div>'
 				);
 
