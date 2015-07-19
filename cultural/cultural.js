@@ -31,7 +31,13 @@ $(document).ready( function() {
 		}
 		console.log(params);
 		
+		$.getJSON('http://api.nytimes.com/svc/events/v2/listings?api-key=d60f06ee6b233be3b6362cf824aa2c1c%3A1%3A61091877&ll=40.6561715%2C-73.9515718&radius=5000', null, function(data) {
+	          console.log(data);
+	});
+		
+		/*
 		$.ajax({
+			crossDomain: true,
 			type:'GET',
 			url:"http://api.nytimes.com/svc/events/v2/listings",
 			data: params,
@@ -40,6 +46,7 @@ $(document).ready( function() {
 		}).done(function (e) {
 			console.log("getting events");
 			console.log(e);
+			*/
 			
 		})
 	});
