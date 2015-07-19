@@ -25,11 +25,11 @@ function initialize(lat, lon, id) {
 	var myLatlng = new google.maps.LatLng(lat, lon);
 	var map = new google.maps.Map(document.getElementById('map-canvas-'+id), {
 		zoom: 15,
-		center: myLatlng
+		center: [lat,lon]
 	});
 
 	var marker = new google.maps.Marker({
-		position: myLatlng,
+		position: [lat,lon],
 		map: map,
 		title: event
 	});
@@ -76,7 +76,7 @@ $(document).ready( function() {
 	            	+'<p>City:' + city + '</p>'
 	            	+'<p>Event:' + event_name + '</p>'
 	            	+'<p>Free:' + free_event + '</p>'
-	            	+'<a href="'+link+'">Link to this event</a>'
+	            	+'<a href="'+link+'">Link to this event</a><br />'
 	            	+'<button class="map-button" id="'+i+'">Check Map</button>'
 	            	+'<div id="map-canvas-'+i+'" style="width: 400px; height: 200px"></div>'
 	            	+'</div>'
