@@ -36,9 +36,10 @@ function initialize(lat, lon, id) {
 	console.log("map should be appearing..")
 }
 
-$(".map-button").click(function() {
+$(".map-button").on('click', function() {
 	var id = $(this).attr('id');
 	var location = loc[id];
+	console.log(logcation);
 	
 	initialize(location[0], location[1], id);
 });
@@ -74,7 +75,7 @@ $(document).ready( function() {
 	            	+'<p>City:' + city + '</p>'
 	            	+'<p>Event:' + event_name + '</p>'
 	            	+'<p>Free:' + free_event + '</p>'
-	            	+'<p>Link to this event:' + link + '</p>'
+	            	+'<p>Link to this event: ' + link + '</p>'
 	            	+'<button class="map-button" id="'+i+'">Check Map</button>'
 	            	+'<div id="map-canvas-'+i+'" style="width: 400px; height: 200px"></div>'
 	            	+'</div>'
