@@ -19,11 +19,11 @@ function load_json() {
 }
 
 
-function initialize(lat, lon) {
+function initialize(lat, lon, id) {
 	console.log("getting map..");
 
 	var myLatlng = new google.maps.LatLng(lat, lon);
-	var map = new google.maps.Map(document.getElementById('map-canvas'), {
+	var map = new google.maps.Map(document.getElementById('map-canvas-'+id), {
 		zoom: 15,
 		center: myLatlng
 	});
@@ -40,7 +40,7 @@ $(".map-button").click(function() {
 	var id = $(this).attr('id');
 	var location = loc[id];
 	
-	initialize(location[0], location[1]);
+	initialize(location[0], location[1], id);
 });
 
 $(document).ready( function() {
@@ -75,7 +75,7 @@ $(document).ready( function() {
 	            	+'<p>Event:' + event_name + '</p>'
 	            	+'<p>Free:' + free_event + '</p>'
 	            	+'<button class="map-button" id="click-map-'+i+'">Check Map</button>'
-	            	+'<div id="map-canvas" style="width: 400px; height: 200px"></div>'
+	            	+'<div id="map-canvas-'+i+'" style="width: 400px; height: 200px"></div>'
 	            	+'</div>'
 	            );
 
