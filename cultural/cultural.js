@@ -40,7 +40,7 @@ $(document).ready( function() {
 		
 		$.ajax({
 			type:'GET',
-			url:"https://jsonp.afeld.me/?url=http://api.nytimes.com/svc/events/v2/listings",
+			url:"http://api.nytimes.com/svc/events/v2/listings",
 			data: params
 		}).done(function (e) {
 			console.log("getting events");
