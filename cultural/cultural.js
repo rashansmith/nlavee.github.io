@@ -27,14 +27,14 @@ $(document).ready( function() {
 		var params = {
 				"api-key": "d60f06ee6b233be3b6362cf824aa2c1c:1:61091877",
 				ll:mydata[1].geometry.coordinates[1]+"," + mydata[1].geometry.coordinates[0],
-				radius: 100,
+				radius: 5000
 		}
 		console.log(params);
 		
 		$.ajax({
-			type:'Get',
+			type:'GET',
 			url:"http://api.nytimes.com/svc/events/v2/listings",
-			params: params,
+			params: params
 				
 		}).done(function (e) {
 			console.log("getting events");
