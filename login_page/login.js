@@ -85,4 +85,7 @@ $(document).ready( function(){
 
 	});
 
+	$("#cancel-login").click( function() {
+		document.location.href = 'http://nlavee.github.io/Ketchup/index.html';
+	});
 });
