@@ -237,7 +237,7 @@ label {
 
 button {
     
-    	background-color: rgba(101, 208, 191, 0.84);
+    background-color: rgba(101, 208, 191, 0.84);
 	font-size: xx-large;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -248,4 +248,8 @@ button {
 	margin-top: 20px;
 	border: none;
     
+}
+
+#map-canvas {
+	text-align: center;
 }
