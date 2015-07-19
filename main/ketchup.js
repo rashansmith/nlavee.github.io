@@ -20,7 +20,7 @@ $(document).ready(function (){
 		}
 	});
 	
-	$("#login").change(function() {
+	$("#login").click(function() {
 		document.location.href = 'http://nlavee.github.io/login_page/login.html';
 	});
 
