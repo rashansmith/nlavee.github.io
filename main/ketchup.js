@@ -2,17 +2,17 @@ $(document).ready(function (){
 	
 	$("#choose-section").change(function() {
 		var value_chosen = $("#choose-section").val();
-		if(value_chosen == "6Math") {
+		if(value_chosen == "6math") {
 			document.location.href = 'http://nlavee.github.io/main/6Math.html';
-		} else if(value_chosen == "7Math") {
+		} else if(value_chosen == "7math") {
 			document.location.href = 'http://nlavee.github.io/main/7Math.html';
-		} else if(value_chosen == "8Math") {
+		} else if(value_chosen == "8math") {
 			document.location.href = 'http://nlavee.github.io/main/8Math.html';
-		} else if(value_chosen == "6Science") {
+		} else if(value_chosen == "6science") {
 			document.location.href = 'http://nlavee.github.io/main/6Science.html';
-		}  else if(value_chosen == "7Science") {
+		}  else if(value_chosen == "7science") {
 			document.location.href = 'http://nlavee.github.io/main/7Science.html';
-		}  else if(value_chosen == "8Science") {
+		}  else if(value_chosen == "8science") {
 			document.location.href = 'http://nlavee.github.io/main/8Science.html';
 		}  else if(value_chosen == "language") {
 			document.location.href = 'http://nlavee.github.io/main/678language.html';
