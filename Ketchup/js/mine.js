@@ -101,8 +101,7 @@ var j = false;
         grade = 10;
     }
         
-        
+    console.log(grade);  
     
     });
 
-console.log(grade);
