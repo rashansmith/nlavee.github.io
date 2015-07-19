@@ -33,7 +33,7 @@ $(document).ready( function() {
 		
 		
 		$.get('https://jsonp.afeld.me/?url=http%3A%2F%2Fapi.nytimes.com%2Fsvc%2Fevents%2Fv2%2Flistings%3Fapi-key%3Dd60f06ee6b233be3b6362cf824aa2c1c%253A1%253A61091877%26ll%3D40.6561715%252C-73.9515718%26radius%3D5000', function (results) {
-	        alert('Cross domain JS call achieved. Have your implementation going in here!');
+	        console.log(results);
 	      });
 		
 		/*
