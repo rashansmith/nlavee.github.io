@@ -34,7 +34,7 @@ $(document).ready( function() {
 		$.ajax({
 			type:'GET',
 			url:"http://api.nytimes.com/svc/events/v2/listings",
-			params: params
+			data: params
 				
 		}).done(function (e) {
 			console.log("getting events");
