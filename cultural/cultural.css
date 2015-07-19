@@ -231,3 +231,20 @@ h1 {
 	font-size: 60px;
 	padding-bottom: 50px;
 }
+
+
+}
+.information{
+text-align: center;
+font-size:x-large;
+background-color: white;
+opacity: .9;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 10px;
+line-height:2;
+margin-bottom: 15px;
+margin-left:300px;
+margin-right:300px;
+
+}
