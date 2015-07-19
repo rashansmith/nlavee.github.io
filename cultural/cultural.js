@@ -71,7 +71,7 @@ $(document).ready( function() {
 	            
 	            if(free == false) {
 	            	$("#information-"+i).append(
-	    	            	'<p>Price:' + price + '</p>
+	    	            	'<p>Price:' + price + '</p>'
 	    	            );
 	            }
 	            var lat = oneInstance['geocode_latitude'];
