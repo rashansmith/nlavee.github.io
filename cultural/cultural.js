@@ -67,13 +67,14 @@ $(document).ready( function() {
 	            if(free == false) price = oneInstance['price'];
 	            if(free == true) free_event = "Yes!";
 	            else free_event = "No! :("
-	            
+	            var link = oneInstance['event_detail_url'];
 	            var event_name = oneInstance['event_name'];
 	            $(".results").append(
 	            	'<div class="information" id="information-'+i+'">'
 	            	+'<p>City:' + city + '</p>'
 	            	+'<p>Event:' + event_name + '</p>'
 	            	+'<p>Free:' + free_event + '</p>'
+	            	+'<p>Link to this event:' + link + '</p>'
 	            	+'<button class="map-button" id="'+i+'">Check Map</button>'
 	            	+'<div id="map-canvas-'+i+'" style="width: 400px; height: 200px"></div>'
 	            	+'</div>'
