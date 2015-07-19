@@ -268,3 +268,18 @@ background-color: #e35d5b;
 
 	
 }
+#search{
+	background-color: #e35d5b;
+	font-size: x-large;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 10px;
+	color: white;
+	margin-left: 30px;
+	margin-right: 30px;
+	border: none;
+	margin-bottom: 25px;	
+	
+}
