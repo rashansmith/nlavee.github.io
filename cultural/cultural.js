@@ -46,8 +46,8 @@ $(document).ready( function() {
 		}).done(function (e) {
 			console.log("getting events");
 			console.log(e);
-			*/
 			
 		})
+		*/
 	});
 });
