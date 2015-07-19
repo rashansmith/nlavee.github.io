@@ -1,5 +1,6 @@
 var mydata;
 var school_names = [];
+var loc = {};
 
 function load_json() {
 	console.log("loading json");
@@ -35,6 +36,13 @@ function initialize(lat, lon) {
 	console.log("map should be appearing..")
 }
 
+$(".map-button").click(functtion() {
+	var id = $(this).attr('id');
+	var location = loc[id];
+	
+	initialize(location[0], location[1]);
+});
+
 $(document).ready( function() {
 	
 	load_json();
@@ -48,8 +56,9 @@ $(document).ready( function() {
 	        console.log(results);
 	        var num_results = results['num_results'];
 	        var array = results['results'];
-	        var arrayLength = array.length;
-	        for (var i = 0; i < arrayLength; i++) {
+	        
+	        //var arrayLength = array.length;
+	        for (var i = 0; i < num_results; i++) {
 	            var oneInstance = array[i];
 	            var city = oneInstance['city'];
 	            var free = oneInstance['free'];
@@ -65,6 +74,7 @@ $(document).ready( function() {
 	            	+'<p>City:' + city + '</p>'
 	            	+'<p>Event:' + event_name + '</p>'
 	            	+'<p>Free:' + free_event + '</p>'
+	            	+'<button class="map-button" id="click-map-'+i+'">Check Map</button>'
 	            	+'<div id="map-canvas" style="width: 400px; height: 200px"></div>'
 	            	+'</div>'
 	            );
@@ -76,7 +86,7 @@ $(document).ready( function() {
 	            }
 	            var lat = oneInstance['geocode_latitude'];
 	            var lon = oneInstance['geocode_longitude'];
-	            initialize(lat, lon);
+	            loc[i] = [lat,lon];
 	            
 	        }
 	      });
