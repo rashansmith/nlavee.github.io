@@ -78,12 +78,7 @@ $(document).ready( function() {
 	            	+'<div id="map-canvas" style="width: 400px; height: 200px"></div>'
 	            	+'</div>'
 	            );
-	            
-	            if(free == false) {
-	            	$("#information-"+i).append(
-	    	            	'<p>Price:' + price + '</p>'
-	    	            );
-	            }
+
 	            var lat = oneInstance['geocode_latitude'];
 	            var lon = oneInstance['geocode_longitude'];
 	            loc[i] = [lat,lon];
