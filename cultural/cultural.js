@@ -53,44 +53,47 @@ $(document).ready( function() {
 		document.location.href = 'http://nlavee.github.io/Ketchup/index.html';
 	});
 	
-	console.log("seaching..");
+	$("#search").click(function() {
+		console.log("seaching..");
 
-	
-	$.get('https://jsonp.afeld.me/?url=http%3A%2F%2Fapi.nytimes.com%2Fsvc%2Fevents%2Fv2%2Flistings%3Fapi-key%3Dd60f06ee6b233be3b6362cf824aa2c1c%253A1%253A61091877%26ll%3D'+mydata[i].geometry.coordinates[1] +'%252C'+mydata[i].geometry.coordinates[0]+'%26radius%3D5000', function (results) {
-		console.log(results);
-		var num_results = results['num_results'];
-		var array = results['results'];
+		var i = 1;
 
-		var arrayLength = array.length;
-		for (var i = 0; i < arrayLength; i++) {
-			var oneInstance = array[i];
-			var city = oneInstance['city'];
-			var free = oneInstance['free'];
-			var free_event;
-			var price; 
-			if(free == false) price = oneInstance['price'];
-			if(free == true) free_event = "Yes!";
-			else free_event = "No! :("
-				var link = oneInstance['event_detail_url'];
-			var event_name = oneInstance['event_name'];
-			$(".results").append(
-					'<div class="information" id="information-'+i+'">'
-					+'<p>City:' + city + '</p>'
-					+'<p>Event:' + event_name + '</p>'
-					+'<p>Free:' + free_event + '</p>'
-					+'<a href="'+link+'">Link to this event</a><br />'
-					+'<button class="map-button" id="'+i+'">Check Map</button>'
-					+'<div id="map-canvas-'+i+'" style="width: 400px; height: 200px"></div>'
-					+'</div>'
-			);
+		$.get('https://jsonp.afeld.me/?url=http%3A%2F%2Fapi.nytimes.com%2Fsvc%2Fevents%2Fv2%2Flistings%3Fapi-key%3Dd60f06ee6b233be3b6362cf824aa2c1c%253A1%253A61091877%26ll%3D'+mydata[i].geometry.coordinates[1] +'%252C'+mydata[i].geometry.coordinates[0]+'%26radius%3D5000', function (results) {
+			console.log(results);
+			var num_results = results['num_results'];
+			var array = results['results'];
 
-			var lat = oneInstance['geocode_latitude'];
-			var lon = oneInstance['geocode_longitude'];
-			console.log(lat);
-			console.log(lon);
-			loc[i] = [lat,lon];
+			var arrayLength = array.length;
+			for (var i = 0; i < arrayLength; i++) {
+				var oneInstance = array[i];
+				var city = oneInstance['city'];
+				var free = oneInstance['free'];
+				var free_event;
+				var price; 
+				if(free == false) price = oneInstance['price'];
+				if(free == true) free_event = "Yes!";
+				else free_event = "No! :("
+					var link = oneInstance['event_detail_url'];
+				var event_name = oneInstance['event_name'];
+				$(".results").append(
+						'<div class="information" id="information-'+i+'">'
+						+'<p>City:' + city + '</p>'
+						+'<p>Event:' + event_name + '</p>'
+						+'<p>Free:' + free_event + '</p>'
+						+'<a href="'+link+'">Link to this event</a><br />'
+						+'<button class="map-button" id="'+i+'">Check Map</button>'
+						+'<div id="map-canvas-'+i+'" style="width: 400px; height: 200px"></div>'
+						+'</div>'
+				);
 
-		}
+				var lat = oneInstance['geocode_latitude'];
+				var lon = oneInstance['geocode_longitude'];
+				console.log(lat);
+				console.log(lon);
+				loc[i] = [lat,lon];
+
+			}
+		});
 
 
 	});
