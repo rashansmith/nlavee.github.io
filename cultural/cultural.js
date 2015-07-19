@@ -36,7 +36,7 @@ function initialize(lat, lon, id) {
 	console.log("map should be appearing..")
 }
 
-$(".map-button").on('click', function() {
+$(document).on('click', ".map-button", function() {
 	console.log("click button for map");
 	var id = $(this).attr('id');
 	var location = loc[id];
