@@ -71,6 +71,9 @@ $(document).ready( function(){
 
 
 			);
+			$("#success").css(
+				'display':'block';
+			);
 			console.log(school_name);
 			initialize(school_name);
 			
