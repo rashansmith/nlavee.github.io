@@ -1,5 +1,24 @@
 $(document).ready(function (){
-
+	
+	$("#choose-section").change(function() {
+		var value_chosen = $("#choose-section").val();
+		if(value_chosen == "6Math") {
+			document.location.href = 'http://nlavee.github.io/main/6Math.html';
+		} else if(value_chosen == "7Math") {
+			document.location.href = 'http://nlavee.github.io/main/7Math.html';
+		} else if(value_chosen == "8Math") {
+			document.location.href = 'http://nlavee.github.io/main/8Math.html';
+		} else if(value_chosen == "6Science") {
+			document.location.href = 'http://nlavee.github.io/main/6Science.html';
+		}  else if(value_chosen == "7Science") {
+			document.location.href = 'http://nlavee.github.io/main/7Science.html';
+		}  else if(value_chosen == "8Science") {
+			document.location.href = 'http://nlavee.github.io/main/8Science.html';
+		}  else if(value_chosen == "language") {
+			document.location.href = 'http://nlavee.github.io/main/678language.html';
+		}
+	});
+	
 	$("#back").click(function() {
 		document.location.href = 'http://nlavee.github.io/Ketchup/index.html';
 	});
