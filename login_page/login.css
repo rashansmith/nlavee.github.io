@@ -8,10 +8,6 @@ body{
   font-family: sans-serif;
 }
 
-#success {
-	background-color: brown;
-}
-
 .header{
     
  	margin-top: 5px;
@@ -113,4 +109,132 @@ footer {
     font-size: medium;
     text-align: center;
     color: #e35d5b;
+}
+
+.block1{
+    width: 45%;
+    display: inline-block;
+    height: 300px;
+    background-image: url(media/black.jpg);
+    opacity: .7;
+    border-radius: 20px;
+    margin-right: 2%;
+    margin-left: 3%;
+    
+}
+
+.block2{
+    width: 45%;
+    display: inline-block;
+    height: 300px;
+    background-image: url(media/black.jpg);
+    opacity: .7;
+    border-radius: 20px;
+    margin-right: 3%;
+    margin-left: 2%;
+}
+
+.block3{
+    width: 45%;
+    display: inline-block;
+    height: 300px;
+    background-image: url(media/black.jpg);
+    opacity: .7;
+    border-radius: 20px;
+    margin-right: 2%;
+    margin-left: 3%;
+    
+}
+
+.block4{
+    width: 45%;
+    display: inline-block;
+    height: 300px;
+    background-image: url(media/black.jpg);
+    opacity: .7;
+    border-radius: 20px;
+    margin-right: 3%;
+    margin-left: 2%;
+}
+
+.block5{
+    width: 45%;
+    display: inline-block;
+    height: 300px;
+    background-image: url(media/black.jpg);
+    opacity: .7;
+    border-radius: 20px;
+    margin-right: 2%;
+    margin-left: 3%;
+    
+}
+
+.block6{
+    width: 45%;
+    display: inline-block;
+    height: 300px;
+    background-image: url(media/black.jpg);
+    opacity: .7;
+    border-radius: 20px;
+    margin-right: 3%;
+    margin-left: 2%;
+}
+
+input {
+    
+    padding-top: 13px;
+    padding-bottom: 7px;
+    font-size: medium;
+    
+}
+
+.form-input{
+    
+    text-align: center;
+    background-color: white;
+    padding-bottom: 40px;
+    padding-top: 60px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 20px;
+}
+
+input{
+    
+ width: 300px;  
+ padding-top: 16px;
+ padding-bottom: 6px;
+ 
+    
+}
+
+label {
+	width: 200px;
+	display: inline-block;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	color: white;
+	padding-left: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	margin-left: 30px;
+    font-size: xx-large;
+    background-color: #e53935;
+    opacity: .7;
+    margin-bottom: 10px;
+}
+
+button {
+    
+    	background-color: rgba(101, 208, 191, 0.84);
+	font-size: xx-large;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 7px;
+	color: white;
+	margin-top: 20px;
+	border: none;
+    
 }

@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <title>Login</title>
-<link rel="stylesheet" type="text/css" href="login.css">
+<link rel="stylesheet" type="text/css" href="ketchup.css">
 <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.css" type="text/css">
     <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.css.map" type="text/css">
     <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" type="text/css">
@@ -31,21 +31,28 @@
 </head>
 
 <body>
-	<div id="head">
-		<p>Login Portal for Ketch-up</p>
-	</div>
+    
+    <div class= "header">
+
+        <img src="media/logo.png" alt="logo" width="200 px"/>
+        
+    </div>
+    
+    
 
 	<div class="form-input" id="form-input">
-		<label for="first-name">First Name</label> <input type="text"
-			name="first-name" id="first-name"><br> <label
+		<label class="first-name" for="first-name">First Name</label> <input type="text"
+			name="first-name" id="first-name" ><br> <label
 			for="last-name">Last Name</label> <input type="text" name="last-name"
 			id="last-name"><br> 
 			<label
 			for="email">Email</label> <input type="text" name="email"
 			id="email"><br><label for="school-name">School
 			Name</label> <input type="text" name="school-name" id="school-name"><br>
+            
+        <button id="submit-login" >Submit</button>
+
 	</div>
-	<input id="submit-login" type="submit" value="Submit">
 	<div id="success">
 		</div>
 </body>
