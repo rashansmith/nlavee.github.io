@@ -2,6 +2,7 @@ $(document).ready(function (){
 	
 	$("#choose-section").change(function() {
 		var value_chosen = $("#choose-section").val();
+		console.log(value_chosen);
 		if(value_chosen == "6math") {
 			document.location.href = 'http://nlavee.github.io/main/6Math.html';
 		} else if(value_chosen == "7math") {
