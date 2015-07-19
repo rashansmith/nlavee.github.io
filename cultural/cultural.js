@@ -57,8 +57,8 @@ $(document).ready( function() {
 	        var num_results = results['num_results'];
 	        var array = results['results'];
 	        
-	        //var arrayLength = array.length;
-	        for (var i = 0; i < num_results; i++) {
+	        var arrayLength = array.length;
+	        for (var i = 0; i < arrayLength; i++) {
 	            var oneInstance = array[i];
 	            var city = oneInstance['city'];
 	            var free = oneInstance['free'];
