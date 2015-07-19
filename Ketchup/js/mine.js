@@ -104,3 +104,5 @@ var j = false;
         
     
     });
+
+console.log(grade);
