@@ -14,15 +14,15 @@ var i = false;
 var j = false;
     
     $("#1").click (function(){
-		$(this).data('clicked', true);
+		$("#1").data('clicked', true);
         a = !a;
         
         if(a = true){
-        $(this).css({
+        $("#1").css({
 			"background-color": "#d78ce5"
 		});
         }else{
-            $(this).css({
+            $("#1").css({
 			"background-color": "#EA4B22"
 		});
         }
