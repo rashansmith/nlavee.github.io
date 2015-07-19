@@ -188,6 +188,17 @@ input {
     
 }
 
+#success {
+    
+    text-align: center;
+    background-color: white;
+    padding-bottom: 40px;
+    padding-top: 60px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 20px;
+}
+
 .form-input{
     
     text-align: center;
