@@ -4,17 +4,17 @@ $(document).ready(function (){
 		var value_chosen = $("#choose-section").val();
 		console.log(value_chosen);
 		if(value_chosen == "6math") {
-			document.location.href = 'http://nlavee.github.io/main/6Math.html';
+			document.location.href = 'http://nlavee.github.io/main/6math.html';
 		} else if(value_chosen == "7math") {
-			document.location.href = 'http://nlavee.github.io/main/7Math.html';
+			document.location.href = 'http://nlavee.github.io/main/7math.html';
 		} else if(value_chosen == "8math") {
-			document.location.href = 'http://nlavee.github.io/main/8Math.html';
+			document.location.href = 'http://nlavee.github.io/main/8math.html';
 		} else if(value_chosen == "6science") {
-			document.location.href = 'http://nlavee.github.io/main/6Science.html';
+			document.location.href = 'http://nlavee.github.io/main/6science.html';
 		}  else if(value_chosen == "7science") {
-			document.location.href = 'http://nlavee.github.io/main/7Science.html';
+			document.location.href = 'http://nlavee.github.io/main/7science.html';
 		}  else if(value_chosen == "8science") {
-			document.location.href = 'http://nlavee.github.io/main/8Science.html';
+			document.location.href = 'http://nlavee.github.io/main/8science.html';
 		}  else if(value_chosen == "language") {
 			document.location.href = 'http://nlavee.github.io/main/678language.html';
 		}
