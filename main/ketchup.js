@@ -20,6 +20,10 @@ $(document).ready(function (){
 		}
 	});
 	
+	$("#login").change(function() {
+		document.location.href = 'http://nlavee.github.io/login_page/login.html';
+	});
+
 	$("#back").click(function() {
 		document.location.href = 'http://nlavee.github.io/Ketchup/index.html';
 	});
