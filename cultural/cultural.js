@@ -76,7 +76,7 @@ $(document).ready( function() {
 	            	+'<p>City:' + city + '</p>'
 	            	+'<p>Event:' + event_name + '</p>'
 	            	+'<p>Free:' + free_event + '</p>'
-	            	+'<p>Link to this event: ' + link + '</p>'
+	            	+'<a href="'+link+'">Link to this event</a>'
 	            	+'<button class="map-button" id="'+i+'">Check Map</button>'
 	            	+'<div id="map-canvas-'+i+'" style="width: 400px; height: 200px"></div>'
 	            	+'</div>'
