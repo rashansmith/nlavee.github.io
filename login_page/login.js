@@ -56,6 +56,10 @@ $(document).ready( function(){
 		});
 	});
 
+	$("#next").click(function() {
+		document.location.href = 'http://nlavee.github.io/Ketchup/index.html';
+	});
+
 	$("#submit-login").click( function() {
 		var first_name = $("#first-name").val();
 		var last_name = $("#last-name").val();

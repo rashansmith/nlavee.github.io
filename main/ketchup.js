@@ -1,4 +1,9 @@
 $(document).ready(function (){
+
+	$("#back").click(function() {
+		document.location.href = 'http://nlavee.github.io/Ketchup/index.html';
+	});
+
 	$(".block1").mouseenter (function(){
 		$(this).css({
 			"background-image": "url(media/block1.gif)"

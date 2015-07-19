@@ -49,6 +49,10 @@ $(document).ready( function() {
 
 	load_json();
 
+	$("#back").click(function() {
+		document.location.href = 'http://nlavee.github.io/Ketchup/index.html';
+	});
+	
 	$("#search").click(function() {
 		console.log("seaching..");
 
